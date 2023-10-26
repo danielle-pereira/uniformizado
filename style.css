@@ -1,0 +1,440 @@
+/* Estilos gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #393939;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body,
+ul,
+p,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para .box */
+.box {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos para .box .rectangle */
+.box .rectangle {
+    background-color: #cd1418;
+    border: 1px solid #62090A;
+    border-radius: 6px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    width: 9%;
+    right: 25%;
+}
+
+/* Estilos para .label */
+.label {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para .label .text-wrapper */
+.label .text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.container {
+    padding-top: 50px;
+    max-width: 2000px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centralize o conteúdo na tela */
+}
+
+/* menu */
+.menu {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* logo */
+.menu-logo img {
+    padding-left: 100px;
+}
+
+/* pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 25%; /* Defina a largura desejada aqui, como 100% para ocupar todo o espaço disponível */
+}
+
+
+/*icones*/
+.menu-icons>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-icons>*:not(:first-child) {
+    margin-left: 15px;
+}
+
+/* carrinho de compras */
+.menu-cart {
+    padding-right: 120px;
+}
+
+
+.linha-horizontal {
+    width: 100%;
+    height: 1px;
+    background-color: #EEE;
+    position: static;
+    bottom: 6;
+    z-index: 1000;
+}
+
+/* sub-menu */
+
+#navbar {
+    margin: 16px 0;
+    /* Adiciona margens superior e inferior de 20px e 0 nas laterais */
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* Distribuir uniformemente */
+}
+
+#navbar li {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    display: inline-block;
+
+}
+
+#navbar a {
+    color: #575757;
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+}
+
+#navbar ul ul {
+    display: none;
+}
+
+#navbar li:hover {
+    cursor: pointer;
+    color: #393939;
+}
+
+#navbar li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+}
+
+#navbar li i {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+/* banner*/
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 1905px;
+    height: 625px;
+}
+
+/* régua */
+
+.regua {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+
+.regua-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.regua-item svg {
+    margin-right: 15px;
+    /* Adiciona 10px de margem à direita do ícone */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title {
+    font-weight: bold;
+}
+
+.text-description {
+    margin-top: 2px;
+}
+
+
+/*mini-banner*/
+
+.vitrine {
+    position: relative;
+    width: 30%;
+    height: 20vw;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.vitrine-item {
+    width: 90%;
+    margin: 0% auto 2% ;
+    display: flex;
+}
+
+
+/*circulos busque por escola*/
+
+.circle {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.circle h1 {
+    color: #3B3B3B;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+  
+}
+
+.circle h2 {
+    color: #3B3B3B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.box-img {
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    justify-content: center;
+
+}
+
+.circle-pai {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.circle-item img {
+    width: 140px;
+
+}
+
+
+/*lançamentos*/
+
+.product-title {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+}
+
+.product-card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    transition: border 0.2s; /* Adicione uma transição suave para a borda */
+}
+
+.product-card:hover {
+    border: 2px solid #CD1418; /* Adicione uma borda vermelha quando o mouse estiver sobre o card */
+}
+
+
+.product-name {
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #3e3e3e;
+    font-size: 24px;
+}
+
+.text-description {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.product-price {
+    color: #cd1418;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/*estrela*/
+.rating-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+label {
+    width: 36px; /* Largura fixa para as estrelas */
+    height: 36px; /* Altura fixa para as estrelas */
+    font-size: 36px;
+    font-family: 'Arial', sans-serif; /* Use uma fonte que contenha estrelas (por exemplo, Arial) */
+    cursor: pointer;
+    color: yellow; /* Defina a cor amarela para as estrelas */
+   
+}
+
+
+.product-card {
+    justify-content: space-evenly;
+    width: 300px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    transition: border 0.2s, transform 0.2s; /* Adicione uma transição suave para a borda e a transformação */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adicione uma sombra suave */
+}
+.product-card img {
+    width: 200px; /* Defina a largura desejada para a imagem */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+
+.product-card:hover {
+    border: 1px solid red; /* Adicione uma borda vermelha quando o mouse estiver sobre o card */
+    transform: scale(0.95); /* Reduza o tamanho do card em 5% */
+}
+
+.product-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    white-space: nowrap; /* Evita que o texto seja quebrado em várias linhas */
+    background-color: #11B636;
+    color: #ffffff;
+    font-size: 20px; /* Aumente o tamanho da fonte */
+    line-height: normal;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 90px; /* Ajuste o padding para 15px no eixo vertical e 40px no eixo horizontal */
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    transition: display 0.3s;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.product-card:hover .product-button {
+    display: block; /* Altere a visibilidade para visível quando o mouse estiver sobre o card */
+}
+
+
+/*benner-2*/
+.banner {
+    padding-top: 48px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.banner-container {
+    display: flex;
+}
+
+.banner-item {
+    width: 870px;
+    height: 440px;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 20px; /* Adicione a margem apenas à direita para separar as imagens */
+}
+
+.banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
